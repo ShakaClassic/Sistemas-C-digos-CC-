@@ -1,0 +1,34 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+
+int main() {
+    // Definir o nome do arquivo
+    std::string filename = "backupshaka.txt";
+    
+    // Abrir o arquivo para escrita
+    std::ofstream outfile(filename);
+
+    // Verificar se o arquivo foi aberto corretamente
+    if (!outfile.is_open()) {
+        std::cerr << "Erro ao abrir o arquivo para escrita." << std::endl;
+        return 1;
+    }
+
+    // Conteúdo a ser escrito no arquivo (exemplo)
+    std::string content = R"(
+    Tudo que estiver aqui será gerado e criado no arquivo.
+    Você pode adicionar várias linhas e informações.
+    Esta é uma demonstração de como o texto será armazenado no arquivo.
+    )";
+
+    // Escrever o conteúdo no arquivo
+    outfile << content;
+
+    // Fechar o arquivo
+    outfile.close();
+
+    std::cout << "Arquivo '" << filename << "' criado com sucesso." << std::endl;
+    
+    return 0;
+}
