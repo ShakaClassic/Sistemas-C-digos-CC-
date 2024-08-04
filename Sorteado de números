@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+// Base para soteador de numero.
+
+int main () {
+    
+    printf("Sorteio iniciado\n\n\n\n");
+    printf("    \n\n");
+    printf("    \n\n");
+    printf("    \n\n");
+    
+    printf("Cauculando numeros, aguarde por favor...\n\n\n\n\n");
+    
+    srand(time(NULL));
+    
+    int numero = rand() % 36; // ponha o numero que deseja, ex: se por: 40 ele vai sortear um numero entre 1 e 40.
+    
+    printf("Numero sorteado foi:\n %d", numero);
+    return 1;
+}
