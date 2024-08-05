@@ -11,7 +11,7 @@ int main () {
     printf("    \n\n");
     printf("    \n\n");
     
-    printf("Cauculando numeros, aguarde por favor...\n\n\n\n\n");
+    printf("Calculando numeros, aguarde por favor...\n\n\n\n\n");
     
     srand(time(NULL));
     
